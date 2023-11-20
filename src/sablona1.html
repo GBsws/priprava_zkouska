@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.button {
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  overflow: hidden;
+  outline: none;
+}
+
+.button img {
+  width: 150px;
+  height: 150px;
+  transition: transform .2s;
+}
+
+.button:hover img {
+  transform: scale(1.2);
+}
+</style>
+</head>
+<body>
+
+<button type="button" class="button">
+  <img src="image1.jpg" alt="Nahrdelnik" />
+</button>
+
+<button type="button" class="button">
+  <img src="image2.jpg" alt="Nahrdelnik" />
+</button>
+
+<!-- Repeat the above two lines of code for the other image buttons -->
+
+</body>
+</html>
+
+<!-- -------------------------------------------------- -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nahrdelnik Buttons Grid</title>
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 10px;
+        }
+        .button {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        .button img {
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <!-- First Line -->
+        <div class="button">
+            <img src="button1.jpg" alt="">
+            <span>Nahrdelnik</span>
+        </div>
+        <div class="button">
+            <img src="button2.jpg" alt="">
+            <span>Nahrdelnik</span>
+        </div>
+        <div class="button">
+            <img src="button3.jpg" alt="">
+            <span>Nahrdelnik</span>
+        </div>
+        <div class="button">
+            <img src="button4.jpg" alt="">
+            <span>Nahrdelnik</span>
+        </div>
+        <div class="button">
+            <img src="button5.jpg" alt="">
+            <span>Nahrdelnik</span>
+        </div>
+        <div class="button">
+            <img src="button6.jpg" alt="">
+            <span>Nahrdelnik</span>
+        </div>
+
+        <!-- Second Line -->
+        <div class="button">
+            <img src="button7.jpg" alt="">
+            <span>Nahrdelnik</span>
+        </div>
+        <div class="button">
+            <img src="button8.jpg" alt="">
+            <span>Nahrdelnik</span>
+        </div>
+        <div class="button">
+            <img src="button9.jpg" alt="">
+            <span>Nahrdelnik</span>
+        </div>
+        <div class="button">
+            <img src="button10.jpg" alt="">
+            <span>Nahrdelnik</span>
+        </div>
+        <div class="button">
+            <img src="button11.jpg" alt="">
+            <span>Nahrdelnik</span>
+        </div>
+        <div class="button">
+            <img src="button12.jpg" alt="">
+            <span>Nahrdelnik</span>
+        </div>
+    </div>
+</body>
+</html>
